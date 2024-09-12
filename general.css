@@ -1,0 +1,78 @@
+*{
+    margin: 0;padding: 0;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(7, 102, 62);
+
+    /*for fixing the navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*for fixing the navbar */
+    box-shadow: 1px 8px 8px  rgba(0, 0, 0, 0.986);
+
+}
+
+.nav a {
+    text-align: center;
+    color:white;    text-decoration: none;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.nav a:hover {
+    background-color: wheat;
+    color: black;
+    border-radius: 12px;
+}
+.gpage1{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 100px;
+   
+}
+.headimg{
+    background-size: cover;        /* This ensures the image covers the entire page */
+    background-position: center;   /* Center the image */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+    background-attachment: fixed;  /* Keeps the image fixed when scrolling */
+    height: 100vh;                 /* Sets the height to the full viewport height */
+    margin: 0;    
+    position: relative;
+    z-index: -1;  
+    overflow: hidden;
+    opacity: .91;
+ }
+ .headimg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("your-image-url.jpg") no-repeat center center;
+    opacity: .12;
+    filter: brightness(10%); /* Adjust brightness to affect opacity */
+
+    
+  }
+.text1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    font-size: 130px;
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;    transform: translate(-50%, -50%);
+}
+.content{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace; 
+}

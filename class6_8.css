@@ -1,0 +1,62 @@
+*{
+    margin: 0;padding: 0;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(235, 173, 173);
+
+    /*for fixing the navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*for fixing the navbar */
+    box-shadow: 1px 8px 8px  rgba(0, 0, 0, 0.986);
+
+}
+
+.nav a {
+    text-align: center;
+    color:white;    text-decoration: none;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+.nav a:hover {
+    background-color: wheat;
+    color: black;
+    border-radius: 12px;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+    margin: 100px;
+    text-align: center;
+
+    
+}
+.class {
+    width: 100%;
+    max-width: 400px; /* You can adjust the max-width to fit your design */
+    height: 100px;
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Ensures no overflow if image is too large */
+    border: 2px solid #ccc; /* Optional: Adds a border around the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.986);
+    padding: 20px;
+
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(235, 173, 173);
+    color: rgb(70, 9, 9);
+}
